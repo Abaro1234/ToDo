@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+.test {
+    color: rgb(0, 0, 0);
+    size: 200px;
+    position: absolute;
+    left: 37%;
+    bottom: 70%;
+
+
+
+
+}
+
+.bottum {
+    color: rgb(0, 0, 0);
+}
+
+.input {
+    color: rgba(0, 13, 70, 0.658);
+    size: 700px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 50%;
+    width: 10%;
+    height: 5%;
+    right: 44%;
+}
+
+body {
+    background-color: #b9b9b9;
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+}
+
+button {
+    position: relative;
+    width: 200px;
+    padding: 15px 0;
+    text-align: centre;
+    margin: 20px 40px;
+    font-weight: bold;
+    border: 2px solid #91ff00;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+span {
+    background: #91ff00;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%
+}
+
+.die-Liste {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 5%;
+
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    left: 47%;
+    bottom: 2%;
+    cursor: pointer;
+    border-bottom: 5px;
+    font-size: 20px;
+    transform: transLatex(-50)
+}
+
+.der-text {
+    position: absolute;
+    text-align: center;
+    left: 100%;
+    background-color: #000000;
+    color: #fff;
+    transform: translatex(0);
+    white-space: nowrap;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.der-text::before {
+    content: "";
+    position: absolute;
+    bottom: 3%;
+    left: 80%;
+    transform: translateX(0);
+    border: 10px;
+    border-color: #000 #0000 #0000 #0000;
+}
+
+.tooltip:hover .der-text {
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    visibility: visible;
+    opacity: 1;
+    text-align: center;
+}
