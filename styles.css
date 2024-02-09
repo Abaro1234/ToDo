@@ -1,12 +1,40 @@
 * {
     box-sizing: border-box;
 }
-.page{
-    display:flex;
-    flex-direction: column;
+
+.test {
+    color: rgb(0, 0, 0);
+    size: 200px;
+    position: absolute;
+    left: 37%;
+    bottom: 70%;
+
+
+
+
+}
+
+.bottum {
+    color: rgb(0, 0, 0);
+}
+
+.input {
+    color: rgba(0, 13, 70, 0.658);
+    size: 700px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 50%;
+    width: 10%;
+    height: 5%;
+    right: 44%;
+}
+
+body {
+    background-color: #b9b9b9;
+    display: flex;
     justify-content: center;
-    align-items:center;
-    background-color: rgb(150, 150, 150);
+    margin-top: 25%;
 }
 
 button {
@@ -24,7 +52,7 @@ button {
     text-transform: uppercase;
 }
 
-.ka {
+span {
     background: #91ff00;
     height: 100%;
     width: 0;
@@ -35,7 +63,7 @@ button {
     transition: 0.5s;
 }
 
-button:hover .ka {
+button:hover span {
     width: 100%
 }
 

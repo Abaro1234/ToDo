@@ -1,5 +1,10 @@
-
-let todoListe = localStorage.getItem("todos").split(",");
+let todoListe =[]
+if(localStorage.getItem("todos") == null){
+     todoListe =[]
+}
+else {
+     todoListe = localStorage.getItem("todos").split(",");
+}
 console.log(todoListe)
 const toDoListElement = document.getElementById("toDoList")
 
